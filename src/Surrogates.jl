@@ -20,6 +20,14 @@ include("GEK.jl")
 include("GEKPLS.jl")
 include("VirtualStrategy.jl")
 
+# Surrogates with derivative information
+include("derivatives/Operators.jl")
+include("derivatives/Matern.jl")
+include("derivatives/Kriging.jl")
+include("derivatives/RandomFeatures.jl")
+include("derivatives/Wavelets.jl")
+
+
 current_surrogates = ["Kriging", "LinearSurrogate", "LobachevskySurrogate",
     "NeuralSurrogate",
     "RadialBasis", "RandomForestSurrogate", "SecondOrderPolynomialSurrogate",
